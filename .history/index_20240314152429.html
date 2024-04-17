@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+ <ul class="">
+   <li style="--clr:#2483ff;">
+    <a href="#">
+      <i class="fa-solid fa-house"></i>
+      <span>Home</span>
+    </a>
+  </li>
+
+  <li style="--clr:#fff200;">
+    <a href="#">
+      <i class="fa-solid fa-user"></i>
+      <span>Profile</span>
+    </a>
+  </li>
+
+  <li style="--clr:#ff253f;">
+    <a href="#">
+      <i class="fa-solid fa-heart"></i>
+      <span>Likes</span>
+    </a>
+  </li>
+
+  <li style="--clr:#25d366;">
+    <a href="#">
+      
+      <i class="fa-solid fa-gear"></i>
+      <span>Settings</span>
+    </a>
+  </li>
+
+  <li style="--clr:#f32ec8;">
+    <a href="#">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <span>Search</span>
+    </a>
+  </li>
+
+ </ul>
+
+	<div class="section-fluid-main">
+		<div class="section-row">
+			<div class="section-col">
+				<p>Contrary to popular belief, Lorem Ipsum is not <a href="#" class="hover-target img-1">simply random text</a>. It has roots in a piece of classical <a href="#" class="hover-target img-2">Latin literature</a> from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in <a href="#" class="hover-target img-3">Virginia</a>, looked up one of the more obscure <a href="#" class="hover-target img-4">Latin words</a>, consectetur, from a Lorem Ipsum passage.</p>
+			</div>
+		</div>
+
+		<a href="https://front.codes/" class="hover-target logo" target="_blank">
+			<img src="https://assets.codepen.io/1462889/fcb.png" alt="">
+		</a>	
+	<div class='cursor' id="cursor"></div>
+	<div class='cursor2' id="cursor2"></div>
+	<div class='cursor3' id="cursor3"></div> 
+	</div>
+<body class="loading demo-1">
+		<main>
+			<div class="wrap">
+				<div class="content content--sticky content--grid bg-1">
+					<img class="content__img content__img--large content__img--left" src="https://tympanus.net/Development/StickySections/img/3.png" />
+					<h2 class="content__title"><i>The</i> Algorithm</h2>
+					<p class="content__text content__text--left text-meta">The algorithm's workings are shrouded in complexity, and its decision-making processes are inscrutable to the general populace.</p>
+				</div>
+				<div class="content content--sticky content--grid bg-2">
+					<img class="content__img content__img--large content__img--left" src="https://tympanus.net/Development/StickySections/img/2.png" />
+					<h2 class="content__title"><i>The</i> Dogma</h2>
+					<p class="content__text content__text--left text-meta">The digital gospel etched into the very code of the algorithmic society, served as the bedrock of the cognitive regime.</p>
+				</div>
+				<div class="content content--sticky content--grid bg-3">
+					<img class="content__img content__img--large content__img--left" src="https://tympanus.net/Development/StickySections/img/1.png" />
+					<h2 class="content__title"><i>The</i> Architects</h2>
+					<p class="content__text content__text--left text-meta">The elusive entities, lacking human form, operate in the shadows, skillfully shaping societal norms through the complex interplay of algorithms and Dogmas.</p>
+				</div>
+				<img class="content__img spacer" src="img/1.png" />
+			</div>
+			<footer class="frame frame--footer">
+				<p class="frame__credits"><a href="https://www.vecteezy.com/members/annazdsgn">Images by Annas Muslimin</a> on Vecteezy</p>
+				<p class="frame__author"><span>Made by <a href="https://www.twitter.com/codrops">@codrops</a></span> <span><a href="mailto:crnacura@gmail.com">Hire us</a></span></p>
+			</footer>
+		</main>
+	</body>
+
+
+
+
+
+
+  <script>   
+document.getElementsByTagName("body")[0].addEventListener("mousemove", function(n) {
+      t.style.left = n.clientX + "px", 
+		t.style.top = n.clientY + "px", 
+		e.style.left = n.clientX + "px", 
+		e.style.top = n.clientY + "px", 
+		i.style.left = n.clientX + "px", 
+		i.style.top = n.clientY + "px"
+    });
+    var t = document.getElementById("cursor"),
+        e = document.getElementById("cursor2"),
+        i = document.getElementById("cursor3");
+    function n(t) {
+        e.classList.add("hover", "hover-2"), i.classList.add("hover", "hover-2")
+    }
+    function s(t) {
+        e.classList.remove("hover", "hover-2"), i.classList.remove("hover", "hover-2")
+    }
+    s();
+    for (var r = document.querySelectorAll(".hover-target, .hover-target-2"), a = r.length - 1; a >= 0; a--) {
+        o(r[a])
+    }
+    function o(t) {
+        t.addEventListener("mouseover", n), t.addEventListener("mouseout", s)
+    }
+	document.addEventListener('DOMContentLoaded', function () {
+	    var hoverLink = document.querySelector('.logo');
+	    var bodychange = document.querySelector('body');
+
+	    hoverLink.addEventListener('mouseenter', function (e) {
+	        bodychange.classList.add('logo-wrap');
+	    });
+	    hoverLink.addEventListener('mouseleave', function () {
+	        bodychange.classList.remove('logo-wrap');
+	    })
+	})
+	document.addEventListener('DOMContentLoaded', function () {
+	    var hoverLink = document.querySelector('.img-1');
+	    var bodychange = document.querySelector('body');
+
+	    hoverLink.addEventListener('mouseenter', function (e) {
+	        bodychange.classList.add('img-1-wrap');
+	    });
+	    hoverLink.addEventListener('mouseleave', function () {
+	        bodychange.classList.remove('img-1-wrap');
+	    })
+	})
+	document.addEventListener('DOMContentLoaded', function () {
+	    var hoverLink = document.querySelector('.img-2');
+	    var bodychange = document.querySelector('body');
+
+	    hoverLink.addEventListener('mouseenter', function (e) {
+	        bodychange.classList.add('img-2-wrap');
+	    });
+	    hoverLink.addEventListener('mouseleave', function () {
+	        bodychange.classList.remove('img-2-wrap');
+	    })
+	})
+	document.addEventListener('DOMContentLoaded', function () {
+	    var hoverLink = document.querySelector('.img-3');
+	    var bodychange = document.querySelector('body');
+
+	    hoverLink.addEventListener('mouseenter', function (e) {
+	        bodychange.classList.add('img-3-wrap');
+	    });
+	    hoverLink.addEventListener('mouseleave', function () {
+	        bodychange.classList.remove('img-3-wrap');
+	    })
+	})
+	document.addEventListener('DOMContentLoaded', function () {
+	    var hoverLink = document.querySelector('.img-4');
+	    var bodychange = document.querySelector('body');
+
+	    hoverLink.addEventListener('mouseenter', function (e) {
+	        bodychange.classList.add('img-4-wrap');
+	    });
+	    hoverLink.addEventListener('mouseleave', function () {
+	        bodychange.classList.remove('img-4-wrap');
+	    })
+	})
+  
+  
+  
+  
+  
+  </script>
+  <script></script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1{
+    transform: scale(1.1);
+}
+.divONE {
+  width: 100%;
+  height: 99;
+  background-color: #1e2538;
+}
+h1 {
+  color: aliceblue;
+}
